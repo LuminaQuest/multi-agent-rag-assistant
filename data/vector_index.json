@@ -1,0 +1,46 @@
+{
+  "documents": {
+    "Enterprise_Multi_Agent_Architecture.md": {
+      "title": "Enterprise_Multi_Agent_Architecture.md",
+      "char_count": 1032,
+      "chunk_count": 1,
+      "metadata": {
+        "category": "Architecture"
+      }
+    },
+    "Zero_PII_Guardrails_Specification.md": {
+      "title": "Zero_PII_Guardrails_Specification.md",
+      "char_count": 823,
+      "chunk_count": 1,
+      "metadata": {
+        "category": "Security"
+      }
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "2452d5f97e2e-c000",
+      "doc_id": "2452d5f97e2e",
+      "doc_name": "Enterprise_Multi_Agent_Architecture.md",
+      "chunk_index": 0,
+      "content": "# Enterprise Multi-Agent Architecture & Governance Standard\nThe Enterprise AI Platform operates on an autonomous Supervisor-Worker topology designed to prevent infinite recursion and token bloat.\nKey System Policies:\n1. Maximum Agent Recursion: Strict cap of 4 iterative cycles per user session. Workflows exceeding this threshold trigger an automatic circuit breaker.\n2. Self-Corrective RAG (CRAG): Retrieval confidence must score above 0.72. If context relevance falls below 0.72, the query is passed to the Reformulation Agent for semantic expansion before synthesis.\n3. Pareto Model Routing: All standard queries with entropy below 0.65 are dispatched to Small Language Models (SLMs) such as Groq Llama-3 or Gemini Flash. Complex synthesis with legal or financial impact requires Frontier reasoning models (Gemini Pro, GPT-4o).\n4. Human-in-the-Loop Gateway: Any autonomous operation involving database mutations, funds transfer, or critical policy changes must pause state and require explicit Executive cryptographic sign-off.",
+      "token_count": 142,
+      "metadata": {
+        "source": "Enterprise_Multi_Agent_Architecture.md",
+        "char_len": 1031
+      }
+    },
+    {
+      "chunk_id": "80314ce68e21-c000",
+      "doc_id": "80314ce68e21",
+      "doc_name": "Zero_PII_Guardrails_Specification.md",
+      "chunk_index": 0,
+      "content": "# Zero-PII & Adversarial Guardrails Specification\nThe AI Platform enforces strict data privacy and input sanitization protocols:\n1. PII Redaction: Real-time detection masks SSNs, credit card numbers, email addresses, and phone numbers into standardized tokens prior to LLM submission.\n2. Prompt Injection Defense: Adversarial jailbreak attempts such as 'ignore previous instructions' or 'developer mode' are rejected at the edge with HTTP 403 equivalents.\n3. Groundedness Evaluation: Final answers are cross-verified against retrieved source citations. Factual assertions lacking citation anchors [Doc-X] are penalized by the Hallucination Auditor.\n4. Logging & Observability: Traces must record latency in milliseconds, token consumption, cost savings, and model tier without storing raw unmasked sensitive user payloads.",
+      "token_count": 110,
+      "metadata": {
+        "source": "Zero_PII_Guardrails_Specification.md",
+        "char_len": 822
+      }
+    }
+  ]
+}
