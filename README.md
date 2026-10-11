@@ -6,7 +6,7 @@
 [![Eval Pass Rate](https://img.shields.io/badge/Offline_Evals-100%25_PASS-success.svg)](#-offline-evaluation-benchmarks)
 [![Adversarial Defense](https://img.shields.io/badge/Adversarial_Defense-100%25-green.svg)](#-enterprise-guardrails--human-in-the-loop)
 
-**Repository**: [github.com/gaddam-sasikala/multi-agent-rag-assistant](https://github.com/gaddam-sasikala/multi-agent-rag-assistant)  
+**Repository**: [github.com/LuminaQuest/multi-agent-rag-assistant](https://github.com/LuminaQuest/multi-agent-rag-assistant)  
 **Author**: **Gaddam Sasikala** — *AI Engineer | Agentic Systems & RAG | Automation | UI/UX*
 
 ---
@@ -93,7 +93,7 @@ NexusCore includes an intelligent local cognitive engine and requires **zero pai
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/gaddam-sasikala/multi-agent-rag-assistant.git
+git clone https://github.com/LuminaQuest/multi-agent-rag-assistant.git
 cd multi-agent-rag-assistant
 
 # 2. Install dependencies
