@@ -3,9 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](https://www.docker.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-00f3ff.svg?logo=render)](https://multi-agent-rag-assistant-pgjr.onrender.com)
 [![Eval Pass Rate](https://img.shields.io/badge/Offline_Evals-100%25_PASS-success.svg)](#-offline-evaluation-benchmarks)
 [![Adversarial Defense](https://img.shields.io/badge/Adversarial_Defense-100%25-green.svg)](#-enterprise-guardrails--human-in-the-loop)
 
+**Live Demo**: [https://multi-agent-rag-assistant-pgjr.onrender.com](https://multi-agent-rag-assistant-pgjr.onrender.com)  
 **Repository**: [github.com/LuminaQuest/multi-agent-rag-assistant](https://github.com/LuminaQuest/multi-agent-rag-assistant)  
 **Author**: **Gaddam Sasikala** — *AI Engineer | Agentic Systems & RAG | Automation | UI/UX*
 
